@@ -13,28 +13,29 @@ public class Employee {
    private int empage;
    private double empsalary;
    
-   public void setvalue(String a,int b,double c){
-       empname=a;
-       empage=b;
-       empsalary=c;
+   public Employee(String empname,int empage,double empsalary){
+       this.empname=empname;
+       this.empage=empage;
+       this.empsalary=empsalary;
    }
-   public void seta(String a){
-       empname=a;
+   public void setempname(String empname){
+       this.empname=empname;
    }
-   public String geta(){
+   public String getempname(){
        return empname;
    }
-    public void setb(int b){
-       empage=b;
+    public void setempage(int empage){
+       this.empage=empage;
    }
-   public int getb(){
+   public int getempage(){
        return empage;
    }
-    public void setc(double c){
-       empsalary=c;
+    public void setempsalary(double empsalary){
+       this.empsalary=empsalary;
    }
-   public double getc(){
+   public double getempsalary(){
        return empsalary;
    }
+
 
 }
