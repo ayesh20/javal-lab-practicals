@@ -11,12 +11,20 @@ package com.mycompany.test;
 public class Test {
 
     public static void main(String[] args) {
-        Employee sc=new Employee("kasun",25,50000.0);
-        
-        System.out.println("name is:"+sc.getempname());
-        System.out.println("age is:"+sc.getempage());
-        System.out.println("salary is:"+sc.getempsalary());
+       Employee e1=new Employee();
+        e1.seta(28500);
+        e1.setempname("bogdan");
+        e1.setempdes("colombo");
+        System.out.println("name is:"+e1.getempid());
+        System.out.println("age is:"+e1.getempname());
+        System.out.println("salary is:"+e1.getempdes());
+         Employee e2=new Employee();
+        e2.seta(28500);
+        e2.setempname("bird");
+        e2.setempdes("colombo");
+        System.out.println("name is:"+e2.getempid());
+        System.out.println("age is:"+e2.getempname());
+        System.out.println("salary is:"+e2.getempdes());
     }
-
     
 }

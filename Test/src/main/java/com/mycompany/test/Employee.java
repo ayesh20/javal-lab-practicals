@@ -9,32 +9,28 @@ package com.mycompany.test;
  * @author shali
  */
 public class Employee {
-    private String empname;
-   private int empage;
-   private double empsalary;
+       private int empid;
+   private String empname;
+   private String empdes;
    
-   public Employee(String empname,int empage,double empsalary){
-       this.empname=empname;
-       this.empage=empage;
-       this.empsalary=empsalary;
+   
+   public void seta(int a){
+      empid=a;
    }
-   public void setempname(String empname){
-       this.empname=empname;
+   public int getempid(){
+       return empid;
+   }
+    public void setempname(String b){
+      empname=b;
    }
    public String getempname(){
        return empname;
    }
-    public void setempage(int empage){
-       this.empage=empage;
+    public void setempdes(String c){
+       empdes=c;
    }
-   public int getempage(){
-       return empage;
-   }
-    public void setempsalary(double empsalary){
-       this.empsalary=empsalary;
-   }
-   public double getempsalary(){
-       return empsalary;
+   public String getempdes(){
+       return empdes;
    }
 
 
